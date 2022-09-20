@@ -41,7 +41,7 @@ const SearchExercises = ({ exercises, setExercises }) => {
 			>
 				Awesome Exercises You <br /> Should Know
 			</Typography>
-			<Box>
+			<Box position="relative">
 				<TextField
 					placeholder="search exercises"
 					type="search"
@@ -72,8 +72,9 @@ const SearchExercises = ({ exercises, setExercises }) => {
 						width: { lg: "173px", xs: "80px" },
 						height: "56px",
 						position: "absolute",
-						right: "0px",
+						right: "150px",
 						fontSize: { lg: "20px", xs: "14px" },
+						visibility: { xs: "hidden" },
 					}}
 					onClick={handleSearch}
 				>
